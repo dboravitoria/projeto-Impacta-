@@ -1,0 +1,1 @@
+alert('Essa pagina não existe')

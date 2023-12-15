@@ -1,0 +1,8 @@
+body{
+    background-color: cadetblue;
+}
+header, main, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

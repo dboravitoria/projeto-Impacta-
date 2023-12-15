@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/static/imagens/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/static/style.css">
+        <title>Cursinho Web - Contato</title>
+    </head>
+    <body>
+        <header>
+            <!--<img src="online.png" alt="logo do curso" width="50" height="50">-->
+            <img src="/static/imagens/logo.png" alt="logo do curso" id="img-logo">
+            <nav>
+                <div id="navegacao">
+                    <a href="index.html" class="link">Página Inicial</a>
+                    <a href="disciplinas.html" class="link"> Disciplinas Oferecidas</a>
+                    <a href="contato.html" class="link"> Entre em Contato</a>
+                </div>
+            </nav>
+    </header>
+        <main>
+            <section>
+                <article>
+                    <h1>Dados para Contato: </h1>
+                    <form method='post'>
+                        <div>
+                            <label for="nome">Nome Completo: </label>
+                            <input type="text" id="nome" name="nome"required>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required placeholder="nome@provedor.com">
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <label for="disciplinas">Qual disciplina te interessa mais?</label>
+                            <select name="curso" id="curso">
+                                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                                <option value="cc">Ciência da Computação</option>
+                                <option value="si">Sistemas de Informação</option>
+                        </select>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <fieldset name="linguagens" width="900">
+                                <legend for="linguagens">Quais linguagens você conhece?</legend>
+                                <input type="checkbox" name="c#" id="c#"> C# <br>
+                                <input type="checkbox" name="java" id="java"> Java <br>
+                                <input type="checkbox" name="javascript" id="javascript"> JavaScript <br>
+                                <input type="checkbox" name="python" id="python"> Python <br>
+                                <input type="checkbox" name="php" id="php"> PHP <br>
+                                <input type="checkbox" name="ruby" id="ruby"> Ruby
+                            </fieldset>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <fieldset name="conhece" width="900">
+                                <legend for="conhece">Onde você conheceu o Cursinho Web?</legend>
+                                <input type="radio" name="amigos" id="amigos"> Amigos <br>
+                                <input type="radio" name="google" id="google"> Google <br>
+                                <input type="radio" name="youtube" id="youtube"> Youtube <br>
+                                <input type="radio" name="instagram" id="instagram"> Instagram <br>  
+                                <button type="reset" class="botao">Limpar</button>
+                                <input type="submit" value="Enviar" class="botao">
+                            </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <div>
+                <p>Cursinho Web - &copy; Todos os Direitos Reservados</p>
+                <p>Contato: <a href="#">email@provedor.com</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
