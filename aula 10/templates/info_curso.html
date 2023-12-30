@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações dos cursos</title>
+</head>
+<body>
+    <h1>Bem vindo ao curso de {{ nome_curso}}</h1>
+
+    <p>Nivel de dificuldade: 
+       {% if dificuldade == 1 %}
+        <strong>Fácil</strong>
+       {% elif dificuldade == 2 %}
+        <strong>Médio</strong>
+       {% else %}
+        <strong>Difícil</strong>
+       {% endif %}
+    </p>
+    <h2>Habilidades:</h2>
+        <ul>
+            {% for item in habilidades %}
+                <li><strong>{{ item }}</strong></li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
